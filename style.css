@@ -1,0 +1,54 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Lucida Handwriting;
+}
+
+body {
+  background: #000;
+}
+
+.container {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.container span {
+  text-transform: uppercase;
+  display: block;
+}
+
+.text1 {
+  color: White;
+  font-size: 80px;
+  font-weight: 600;
+  letter-spacing: 8px;
+  margin-bottom: 20px;
+  background: black;
+  position: relative;
+  animation: text 3s 1;
+}
+
+.text2 {
+  color: #02b290;
+  font-size: 35px;
+}
+
+@keyframes text {
+  0% {
+    color: #000;
+    margin-bottom: -40px;
+  }
+  30% {
+    letter-spacing: 25px;
+    margin-bottom: -40px;
+  }
+  85% {
+    letter-spacing: 8px;
+    margin-bottom: -40px;
+  }
+}
